@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 tier schema</title>
+</head>
+<body>
+    <h2><u>Three tier schema architecture for data independence :</u></h2>
+    <p>
+        The 3-tier archeticture is a commonly used architectural approach in database management
+        system(DBMS) for the design and <br>development of applications that work with databases.
+        <br>
+        The 3-tier archeticture divides an application's components into three tiers or layers. Each
+        layer has its own set of responsibilites.<br>
+        DBMS 3-Tier architecture divides the complete system into three inter related 
+        but independent modules as shown below:
+    </p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231031161957/dbms-3tier-(1).jpg" alt="Flow chart" 
+     width="400px" height="400px" class="centre">
+     <p>
+        <b>Physical Level :</b> At the Physical level, the information about the location if database objects
+        in the data store is kept. Various usersof DBMS are unaeare of the locations of These objects.
+        In simple terms, physical level of a database describes how the data is being stored in secondary
+        storage devices like disks and tapes and also gives insights on additional storage details. 
+     </p>
+     <p>
+        <b>Conceptual Level :</b> At conceptual level, data is represented in the form of various database tables.
+        For Example, STUDENT database may contain STUDENT and COURSE tables which will be visible to users are unaware
+        of their storage.Also referred as logical schema, it describes what kind of data is to be stored in the database.
+     </p>
+     <p>
+        <b>External Level :</b> An external level specifies a view of the data in terms of conceptual level
+        tables. Each external level view is used to cater to the needs of a particular category of
+        users. For example, FACULTY of a university is intreseted in looking course details of students; 
+        STUDENTS are interested in looking at all details related to academics,accounts,courses and 
+        hostel details as well. So, different views can be generated for different users.
+        The main focus of external level is data abstraction.
+     </p>
+    
+</body>
+</html>
